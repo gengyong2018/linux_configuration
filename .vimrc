@@ -7,6 +7,9 @@ set autoindent
 set autoread
 set ruler
 
+"TAB
+set list lcs=tab:>- ",trail:-
+
 color desert
 
 map <F1>  :NERDTreeToggle<CR>
@@ -29,4 +32,4 @@ let Tlist_Show_One_File = 1
 
 "fugitive
 set laststatus=2
-set statusline+=%{fugitive#statusline()}
+set statusline=%{fugitive#statusline()}
