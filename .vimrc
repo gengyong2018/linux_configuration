@@ -12,11 +12,11 @@ set list lcs=tab:>- ",trail:-
 
 color desert
 
-map <F1>  :NERDTreeToggle<CR>
 map <F5>  :tabnew %<CR>
 map <F6>  :tabnext<CR>
 map <F7>  :set cursorline!<CR>
 map <F8>  :set cursorcolumn!<CR>
+map <F9>  :NERDTreeToggle<CR>
 map <F11> :TlistHighlightTag<CR>
 map <F12> :TlistToggle<CR>
 
