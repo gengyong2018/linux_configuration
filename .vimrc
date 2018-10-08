@@ -1,5 +1,9 @@
 syntax on
 
+filetype plugin on
+
+color desert
+
 set number
 set hlsearch
 set incsearch
@@ -9,8 +13,6 @@ set ruler
 
 "TAB
 set list lcs=tab:>- ",trail:-
-
-color desert
 
 map <F5>  :tabnew %<CR>
 map <F6>  :tabnext<CR>
@@ -22,7 +24,8 @@ map <F12> :TlistToggle<CR>
 
 "NERDTree
 let NERDTreeWinSize = 40
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.swp$', '^.git$']
+let NERDTreeShowHidden = 1
 
 "taglist
 let Tlist_Exit_OnlyWindow = 1
